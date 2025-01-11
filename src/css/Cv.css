@@ -1,0 +1,671 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #09091a;
+  background: #fcfcff;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+  position: relative;
+  margin-top: 0;
+  text-align: center;
+  color: #fcfcff;
+}
+#name {
+  position: relative;
+  left: 1%;
+}
+
+header img.background {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Navigation Bar */
+nav {
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+  margin-top: 158px;
+}
+
+nav ul li {
+  margin: 0 7px;
+}
+
+nav ul li a,
+.button {
+  text-decoration: none;
+  color: #fcfcff;
+  background-color: #3e40b5;
+  border: 3px solid #b1b1b5;
+  font-size: 17px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.button {
+  padding: 3px 6px;
+}
+
+nav ul li a:hover {
+  background-color: #4d4dd0;
+}
+
+/* Main Section */
+main {
+  padding: 10px 20px; /* Reduced horizontal space */
+  width: 100%;
+  max-width: 900px; /* Constrain the main content */
+  margin: 0 auto; /* Center the container */
+  text-align: center;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+main > div p {
+  text-align: justify;
+  margin-top: 20px;
+  word-wrap: break-word; /* Break long words for proper alignment */
+  overflow-wrap: break-word; /* Ensure proper wrapping */
+}
+
+.class3 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+}
+
+.class3 img {
+  width: 130px;
+  height: 160px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px #007bff;
+}
+
+.class3 header h1 {
+  white-space: nowrap;
+  font-size: 18px;
+  position: relative;
+  right: 45px;
+}
+
+.class3 header h2 {
+  white-space: nowrap;
+  font-size: 18px;
+  position: relative;
+  right: 32px;
+}
+
+.imgtop {
+  width: 200px;
+}
+
+/* Name and Description Side by Side */
+main > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 0%;
+}
+
+main > article header {
+  text-align: center;
+  flex: 1;
+}
+
+.header1 {
+  text-align: center;
+}
+
+main > article header h1 {
+  margin-bottom: 5px;
+  padding-top: 10%;
+  font-size: 36px;
+  color: black;
+}
+
+main > article header h2 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+main > article figure {
+  margin: 20px 0;
+  flex-shrink: 0;
+}
+
+/* Image Styling */
+figure img {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+figure {
+  margin-bottom: 20px;
+}
+
+.main-section img {
+  width: 500px;
+  max-width: 100%;
+}
+
+/* Section Styling */
+section {
+  margin-top: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.divsec {
+  padding-left: 0;
+}
+
+#flex3 {
+  padding-left: 0;
+}
+
+section h1 {
+  margin-bottom: 0px;
+  font-size: 28px;
+  text-align: left;
+  color: #4caf50;
+}
+
+section p {
+  margin-bottom: 0px;
+  text-align: justify;
+  word-wrap: break-word; /* Ensure text stays within bounds */
+  overflow-wrap: break-word; /* Prevent overflow of long lines */
+}
+
+/* Popular Projects - Flex Layout */
+section div.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+section div.projects a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+section div.projects a img {
+  display: block;
+  margin: 0 auto 5px;
+  border-radius: 4px;
+  width: 100px;
+}
+
+.flex1 {
+  display: flex;
+  flex-direction: row;
+  gap: 106px;
+  align-items: center;
+}
+
+#flex3 {
+  position: relative;
+  left: 56px;
+}
+
+section div.projects a:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+/* Footer Styling */
+footer {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+footer img.background2 {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+footer .social-icons {
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .social-icons a {
+  padding-top: 3vh;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer .social-icons img {
+  border-radius: 10%;
+  transition: transform 0.3s;
+  width: 40px;
+  height: 40px;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px #007bff;
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .class3 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  #name {
+    position: relative;
+    left: 25px;
+  }
+  .imgtop {
+    width: 120px;
+    height: 85px;
+    position: relative;
+    top: 30px;
+  }
+  .htop {
+    font-size: 27px;
+  }
+
+  .imgtop2 {
+    width: 300px;
+    height: auto;
+  }
+  .class4 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: right;
+    position: relative;
+    left: 323px;
+    width: 385px;
+  }
+  .class5 {
+    width: 380px;
+    position: relative;
+    left: -28px;
+  }
+  .class6 {
+    width: 385px;
+    position: relative;
+    left: 330px;
+  }
+  .ryth {
+    position: relative;
+    right: 115px;
+  }
+  .div4 {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (width: 1024px) {
+  /* Styles specifically for devices with a width of 1024px */
+  .class3 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  #name {
+    position: relative;
+    left: 25px;
+  }
+  .imgtop {
+    width: 120px;
+    height: 85px;
+    position: relative;
+    top: 30px;
+  }
+  .htop {
+    font-size: 27px;
+  }
+
+  .imgtop2 {
+    width: 300px;
+    height: auto;
+  }
+  .class4 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: right;
+    position: relative;
+    left: 323px;
+    width: 385px;
+  }
+  .class5 {
+    width: 380px;
+    position: relative;
+    left: -28px;
+  }
+  .class6 {
+    width: 385px;
+    position: relative;
+    left: 330px;
+  }
+  .ryth {
+    position: relative;
+    right: 115px;
+  }
+  .div4 {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* Media Queries for desktop */
+@media (min-width: 1025px) {
+  /* nav ul {
+ 
+        position: relative;
+        bottom: 0px;
+    } */
+
+  main > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main > div figure {
+    flex: 1;
+    margin-right: 20px;
+  }
+  .class3 {
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+    align-items: center;
+  }
+
+  .class4 {
+    display: flex;
+    flex-direction: row;
+    gap: -5px;
+    align-items: left;
+    position: relative;
+    right: 35px;
+    width: 800px;
+  }
+
+  .class5 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .class6 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    right: 13px;
+  }
+
+  #p1,
+  #p2,
+  #p3,
+  #p4,
+  #p5,
+  #p6 {
+    width: 400px;
+    text-align: justify;
+  }
+
+  #p2,
+  #p3,
+  #p6 {
+    position: relative;
+    top: 44px;
+  }
+
+  .header1 {
+    text-align: left;
+  }
+
+  main > div p {
+    flex: 2;
+    text-align: justify;
+  }
+
+  .divsec {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .divsec {
+    display: flex;
+    flex-direction: row;
+    gap: -5px;
+    align-items: center;
+    position: relative;
+    left: 10px;
+  }
+  .flex1 {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+  }
+
+  .divsec .flex1 div {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .divsec .flex1 div img {
+    width: 100px;
+    height: auto;
+  }
+
+  #flex3 {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    padding-left: 0;
+    position: relative;
+    left: -25px;
+  }
+  body {
+    overflow-y: hidden;
+  }
+}
+
+@media (max-width: 932px) and (orientation: landscape) {
+  /* Styles for phones in landscape mode */
+  p {
+    width: 30vw;
+  }
+  .imgtop {
+    margin-top: 30px;
+  }
+  .header1ryth {
+    margin-bottom: 0px;
+    position: relative;
+    left: 38vw;
+    top: 1vw;
+  }
+  .class3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .class4 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+  }
+  .class5 {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    right: 10px;
+  }
+  .p5 {
+    width: 700px;
+  }
+  .div10 {
+    display: flex;
+    gap: 15px;
+    margin-top: 45px;
+  }
+  .div11 {
+    display: flex;
+    gap: 15px;
+  }
+  .header1 {
+    position: relative;
+    bottom: 33px;
+    left: 55vw;
+  }
+  .class6 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    position: relative;
+    right: 170px;
+  }
+  .flex3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 40vw;
+  }
+  .flex2 {
+    display: flex;
+    gap: 0px;
+    position: relative;
+    left: 5vw;
+    bottom: 45vh;
+  }
+  .p0 {
+    position: relative;
+    left: 10vw;
+  }
+  #flex3 {
+    position: relative;
+    left: 56vw;
+    bottom: 62vh;
+  }
+}
+
+@media (min-width: 933px) and (max-width: 1279px) and (orientation: landscape) {
+  .main {
+    margin: 0 auto; /* Center the main container */
+    max-width: 100%; /* Constrain the container width */
+    position: static; /* Avoid unnecessary position adjustments */
+  }
+  .imgtop {
+    width: 100px;
+    position: relative;
+    right: 0vw;
+    height: 100px;
+    padding-left: 1vw;
+  }
+
+  .class3 {
+    display: flex;
+    flex-direction: row-reverse; /* Align items in a row */
+    gap: 50px;
+    justify-content: space-between; /* Space out content evenly */
+    margin-left: 30%;
+  }
+
+  .class4 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: -5%; /* Add controlled alignment */
+  }
+
+  .class5 {
+    margin-left: 50%; /* Replace large positional shifts */
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .class6 {
+    margin-left: 0%; /* Align content without `position` */
+    display: flex;
+    flex-direction: column;
+    gap: 0vh;
+    margin-left: 0%;
+  }
+
+  #p1,
+  #p2,
+  #p3,
+  #p4,
+  #p5,
+  #p6 {
+    max-width: 80%; /* Constrain paragraph width */
+    margin: 0 auto; /* Center paragraphs */
+    text-align: justify; /* Align text */
+    margin-bottom: 30px;
+  }
+  .p6 {
+    position: relative;
+    bottom: 10vw;
+  }
+  #p4,
+  #p5,
+  #p6 {
+    position: relative;
+    right: 10vw;
+  }
+  .p5 {
+    width: 30vw;
+  }
+  .header1 {
+    position: relative;
+    padding-right: 500px;
+    left: 5px;
+  }
+}

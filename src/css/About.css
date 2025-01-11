@@ -1,0 +1,808 @@
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Prevent Horizontal Scrolling */
+html,
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100vw; /* Set to viewport width */
+  height: 100%; /* Ensure height is 100% */
+  position: relative; /* Prevent absolute positioning from causing overflow */
+}
+
+/* Body Styling */
+body {
+  background-color: #FCFCFF;
+  color:  #09091A;
+  line-height: 1.6;
+  padding-right: 0px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Unordered and Ordered List Styling */
+ul,
+ol {
+  padding-left: 5vw;
+  text-align: left;
+}
+
+li {
+  font-size: 16px;
+  margin: 1vw 0;
+}
+
+/* Header and Navigation */
+header {
+  position: relative;
+  text-align: center;
+}
+
+header img.background {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+nav {
+  position: absolute; /* Position navigation links at the bottom of the header */
+  bottom: 2vh;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 12px;
+  background-color: #3E40B5;
+  border: 3px solid #B1B1B5;
+  color: #FCFCFF;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #4d4dd0;
+}
+
+/* About Me Section */
+main {
+  padding: -2vw;
+  width: 100vw; /* Ensure no overflow */
+  text-align: center;
+  margin-right: 0; /* Remove extra margin */
+  overflow-x: hidden;
+}
+
+main h2 {
+  margin: 2vw 0;
+  font-size: 22px;
+  color: #09091A;
+}
+
+main img {
+  margin: 1vw auto;
+  width: 60%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Table Styling */
+/* General Table Styling */
+table {
+  width: 100%; /* Ensure table fits the viewport width */
+  border-collapse: collapse; /* Remove gaps between borders */
+  margin: 0px auto; /* Center the table */
+  background-color: #3D3E66;
+  color: #FCFCFF;
+  table-layout: fixed; /* Fix table layout to ensure cells shrink proportionally */
+  word-wrap: break-word; /* Allow text wrapping inside cells */
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Table Headers and Cells */
+th,
+td {
+  border: 1px solid #09091A;
+  padding: 0px;
+  text-align: left;
+  font-size: 12px; /* Ensure readability on smaller screens */
+  word-break: break-word; /* Ensure long words break within the cell */
+  white-space: normal; /* Allow wrapping for long content */
+  position: relative;
+}
+
+/* Header Styling */
+th {
+  background-color: #3D3E66;
+  font-weight: bold;
+}
+
+.sec4 {
+  margin-top: 0px;
+  margin-left: 25vw;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.h2topt {
+  position: relative;
+  right: 22vw;
+}
+
+/* Audio/Video Section */
+audio,
+video {
+  display: block;
+  margin: 5vw auto;
+  width: 90%; /* Make responsive */
+  max-width: 60vw; /* Cap maximum width */
+  border: 2px solid #09091A;
+  border-radius: 20px;
+}
+
+.class6 {
+  position: relative;
+  left: 7vw;
+  margin-left: 0px;
+  margin-right: 2vw;
+  overflow-x: hidden;
+  width: 100%;
+}
+.class5 {
+  margin-left: 0;
+}
+.class5 {
+  list-style-type: disc; /* Sets bullets as disks */
+  list-style-position: outside; /* Ensures bullets are outside the text */
+  margin: 20px 0 0 20px; /* Adds spacing and aligns the list to the left */
+  padding: 0; /* Removes padding to keep a clean alignment */
+}
+
+.class5 li {
+  margin: 5px 0; /* Adds vertical spacing between list items */
+  font-size: 16px; /* Ensures text readability */
+  line-height: 1.5; /* Adjusts spacing between lines for better visual flow */
+  text-align: left; /* Ensures the text is aligned to the left */
+}
+p{
+    margin-left: 0vw;
+    
+}
+
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+footer img.background2 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  top: 5vh;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 15px;
+  margin-top: -20px;
+  position: relative;
+  bottom: 3vh;
+}
+
+
+footer .social-icons a img {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s ease;
+}
+
+footer .social-icons a img:hover {
+  transform: scale(1.3);
+}
+
+/* Media Query for Desktop */
+@media screen and (min-width: 1025px) {
+  main {
+    position: relative;
+    right: 100px;
+  }
+
+  header img.background {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: fill;
+  }
+
+  .div10 {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Create two equal-width columns */
+    gap: 0px; /* No spacing between grid items */
+    position: relative;
+    left: 100px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the row direction */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 0%; /* Equal gap between elements */
+    position: relative;
+    left: 250px; /* Reset unnecessary left positioning */
+    margin: 20px auto; /* Center the container and add vertical spacing */
+  }
+
+  audio {
+    width: 300px; /* Fixed width for the audio element */
+    max-width: 100%; /* Ensure responsiveness for smaller containers */
+    margin: 0 auto; /* Center the audio element */
+    margin-left: 0px;
+  }
+
+  .divbot {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 0%; /* Add consistent spacing */
+    position: relative;
+    left: 50px; /* Reset unnecessary left positioning */
+    margin: 0px; /* Center the container and add spacing */
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+
+  table {
+    width: 40%; /* Limit table width for better layout */
+    margin: 20px auto; /* Center the table horizontally and add spacing */
+    margin-left: 80px;
+    margin-right: 350px;
+  }
+
+  .class5 {
+    margin: 0 auto; /* Center the element */
+    text-align: left; /* Center-align any text inside */
+    max-width: 90%; /* Restrict width for better readability */
+    list-style-type: disc; /* Ensure bullets are displayed as disks */
+    top: 80px; /* Adjust vertical positioning */
+    right: 0px;
+    margin-left: 20px;
+  }
+  .sec4 {
+    margin: 0 auto; /* Center the element */
+    text-align: center; /* Center-align any text inside */
+    max-width: 100%; /* Restrict width for better readability */
+    top: 80px; /* Adjust vertical positioning */
+    left: 100px;
+  }
+
+  .question {
+    width: 300px; /* Fixed width for the text element */
+    margin: 0 auto; /* Center the element */
+    text-align: center; /* Center the text content */
+    position: relative;
+    top: 0px; /* Adjust vertical positioning */
+    left: 40px;
+  }
+
+  .h2topt {
+    margin: 0 auto; /* Center the element */
+    text-align: center; /* Center-align the content */
+    position: relative;
+    right: 500px;
+    margin-left: 388px;
+    margin-right: -200px;
+    overflow: visible;
+  }
+  aside {
+    margin-left: 100px;
+  }
+  .class4,
+  .sec4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 0px;
+    height: 20vh;
+    position: relative;
+    text-align: center;
+  }
+
+  footer img.background2 {
+    width: 100%;
+    height: 20vh;
+
+    object-fit: cover;
+    position: relative;
+    top: 5vh;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 15px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 8vh;
+  }
+
+   footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+  }
+
+  footer .social-icons a img:hover {
+    transform: scale(1.3);
+  }
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  main {
+    position: relative;
+    right: 100px;
+  }
+
+  header img.background {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: fill;
+  }
+
+  .div10 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+    position: relative;
+    left: 100px;
+  }
+
+
+.top {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the row direction */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 0%; /* Equal gap between elements */
+    position: relative;
+    left: 80px; /* Reset unnecessary left positioning */
+    margin: 20px auto; /* Center the container and add vertical spacing */
+    margin-left: 200px;
+    margin-right: 0px;
+  }
+
+  audio {
+    width: 300px; /* Fixed width for the audio element */
+    max-width: 100%; /* Ensure responsiveness for smaller containers */
+    margin: 0 auto; /* Center the audio element */
+    margin-left: 0px;
+  }
+
+  .divbot {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    flex-direction: column;
+    align-items: center; /* Align items vertically */
+    flex-direction: column-reverse;
+    gap: 0%; /* Add consistent spacing */
+    position: relative;
+    left: 50px; /* Reset unnecessary left positioning */
+    margin: 0px; /* Center the container and add spacing */
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+
+  table {
+    width: 40%; /* Limit table width for better layout */
+    margin: 20px auto; /* Center the table horizontally and add spacing */
+    margin-left: 0px;
+    margin-right: 700px;
+  }
+
+  .class5 {
+    margin: 0 auto; /* Center the element */
+    text-align: left; /* Center-align any text inside */
+    max-width: 90%; /* Restrict width for better readability */
+    list-style-type: disc; /* Ensure bullets are displayed as disks */
+    position: relative;
+    top: 0px; /* Adjust vertical positioning */
+    left: 120px;
+    margin-left: 20px;
+  }
+  .sec4 {
+    margin: 0 auto; /* Center the element */
+    text-align: center; /* Center-align any text inside */
+    max-width: 100%; /* Restrict width for better readability */
+    position: relative;
+    top: 0px; /* Adjust vertical positioning */
+    left: 200px;
+    margin-left: 0px;
+  }
+
+  .question {
+    width: 600px; /* Fixed width for the text element */
+    margin: 0 auto; /* Center the element */
+    text-align: left; /* Center the text content */
+    position: relative;
+    top: 0px; /* Adjust vertical positioning */
+    right: 200px;
+    margin-left: 80px;
+    margin-right: 0px;
+    padding-left: 100px;
+  }
+
+  .h2topt {
+    margin: 0 auto; /* Center the element */
+    text-align: center; /* Center-align the content */
+    position: relative;
+    right: 620px;
+    margin-left: 498px;
+    margin-right: -200px;
+    overflow: visible;
+  }
+  aside {
+    margin-left: -1px;
+    margin-right: 200px;
+    position: relative;
+    right: 250px;
+  }
+  .class4,
+  .sec4 {
+    margin: 0;
+    padding: 0;
+  }
+  .class7 {
+    margin-left: 105px;
+    margin-right: 640px;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 0px;
+    height: 20vh;
+    position: relative;
+    text-align: center;
+  }
+
+  footer img.background2 {
+    width: 100%;
+    height: 20vh;
+
+    object-fit: cover;
+    position: relative;
+    top: 5vh;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 15px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 8vh;
+  }
+
+  footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+  }
+
+  footer .social-icons a img:hover {
+    transform: scale(1.3);
+  }
+}
+
+@media (width: 1024px) {
+  main {
+    position: relative;
+    right: 100px;
+  }
+
+  header img.background {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: fill;
+  }
+
+  .div10 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0px;
+    position: relative;
+    left: 100px;
+  }
+
+.top {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the row direction */
+
+
+justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 0%; /* Equal gap between elements */
+    position: relative;
+    left: 80px; /* Reset unnecessary left positioning */
+    margin: 20px auto; /* Center the container and add vertical spacing */
+    margin-left: 200px;
+    margin-right: 0px;
+  }
+
+  audio {
+    width: 300px; /* Fixed width for the audio element */
+    max-width: 100%; /* Ensure responsiveness for smaller containers */
+    margin: 0 auto; /* Center the audio element */
+    margin-left: 0px;
+  }
+
+  .divbot {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    flex-direction: column;
+    align-items: center; /* Align items vertically */
+    flex-direction: column-reverse;
+    gap: 0%; /* Add consistent spacing */
+    position: relative;
+    left: 50px; /* Reset unnecessary left positioning */
+    margin: 0px; /* Center the container and add spacing */
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+
+  table {
+    width: 40%; /* Limit table width for better layout */
+    margin: 20px auto; /* Center the table horizontally and add spacing */
+    margin-left: 0px;
+    margin-right: 700px;
+  }
+
+  .class5 {
+    margin: 0 auto; /* Center the element */
+    text-align: left; /* Center-align any text inside */
+    max-width: 90%; /* Restrict width for better readability */
+    list-style-type: disc; /* Ensure bullets are displayed as disks */
+    position: relative;
+    top: 0px; /* Adjust vertical positioning */
+    left: 120px;
+    margin-left: 20px;
+  }
+  .sec4 {
+    margin: 0 auto; /* Center the element */
+    text-align: center; /* Center-align any text inside */
+    max-width: 100%; /* Restrict width for better readability */
+    position: relative;
+    top: 0px; /* Adjust vertical positioning */
+    left: 200px;
+    margin-left: 0px;
+  }
+
+  .question {
+    width: 600px; /* Fixed width for the text element */
+    margin: 0 auto; /* Center the element */
+    text-align: left; /* Center the text content */
+    position: relative;
+    top: 0px; /* Adjust vertical positioning */
+    right: 200px;
+    margin-left: 80px;
+    margin-right: 0px;
+    padding-left: 100px;
+  }
+
+  .h2topt {
+    margin: 0 auto; /* Center the element */
+    text-align: center; /* Center-align the content */
+    position: relative;
+    right: 620px;
+    margin-left: 498px;
+    margin-right: -200px;
+    overflow: visible;
+  }
+  aside {
+    margin-left: -1px;
+    margin-right: 200px;
+    position: relative;
+    right: 250px;
+  }
+  .class4,
+  .sec4 {
+    margin: 0;
+    padding: 0;
+  }
+  .class7 {
+    margin-left: 105px;
+    margin-right: 640px;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 0px;
+    height: 20vh;
+    position: relative;
+    text-align: center;
+  }
+
+  footer img.background2 {
+    width: 100%;
+    height: 20vh;
+
+    object-fit: cover;
+    position: relative;
+    top: 5vh;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 15px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 8vh;
+  }
+
+  footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+  }
+
+  footer .social-icons a img:hover {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 932px) and (orientation: landscape) {
+  /* Styles for phones in landscape mode */
+  .div10 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10vw;
+    position: relative;
+    right: 21vw;
+  }
+  .top {
+    display: flex;
+    gap: 1vw;
+    position: relative;
+    right: 1vw;
+  }
+  .divbot {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5vw;
+    position: relative;
+    right: 8vw;
+    top: 5vh;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  audio {
+    width: 250px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left: 0px;
+    position: relative;
+    top: 10vh;
+  }
+  table {
+    width: 50%;
+  }
+  .h2topt {
+    position: relative;
+    left: -8vw;
+  }
+  .question {
+    width: 30vw;
+  }
+
+
+/* Footer */
+  footer {
+    margin-top: 0px;
+    height: 20vh;
+    position: relative;
+    text-align: center;
+  }
+
+  footer img.background2 {
+    width: 100%;
+    height: 20vh;
+
+    object-fit: cover;
+    position: relative;
+    top: 5vh;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 15px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 8vh;
+  }
+
+  footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s ease;
+  }
+
+  footer .social-icons a img:hover {
+    transform: scale(1.3);
+  }
+}
+@media (min-width: 933px) and (max-width: 1279px) and (orientation: landscape) {
+    .div10 {
+     display: flex;
+    flex-direction: row-reverse;
+    gap: 0vw;
+    
+
+     }
+     .question {
+     width: 200px;
+    margin-left:-30vw;
+     }
+    .h2topt {
+     position: relative;
+    right: 68vw;
+     }
+     .top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1vw;
+        position: relative;
+        left: 23vw;
+     }
+     aside{
+        margin-left: -16vw;
+
+     }
+     table{
+        margin-left: 0.5vw;
+     }
+     .divbot{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0vw;
+        margin-left: 20vw;
+      
+     }
+  }
+  

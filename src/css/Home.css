@@ -1,0 +1,582 @@
+html {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  background-color: #fcfcff;
+  color: #09091a;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding: 0; /* Remove padding to ensure full width */
+  width: 100%;
+  margin: 0; /* Remove any default margin */
+}
+main {
+  padding: 0% 0%;
+  width: 70%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Align links in a row */
+  gap: 10px;
+  margin-bottom: -2vh;
+  position: relative;
+  bottom: 42px;
+  right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 8px 12px;
+  color: #fcfcff;
+  font-weight: bold;
+  font-size: 14px;
+  border: 3px solid #b1b1b5;
+  background-color: #3e40b5;
+  border-radius: 5px;
+  /* position: relative;
+    bottom: 45px;
+    right: 5.5vw; */
+}
+
+nav ul li a:hover {
+  background-color: #4d4dd0;
+}
+p {
+  width: 80vw;
+  text-align: justify;
+  margin-left: 8vw;
+}
+h2 {
+  margin-left: 8vw;
+}
+
+header img.background {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block; /* Ensure no gaps around the image */
+}
+video {
+  display: block;
+  width: 100%; /* Fit video to phone width */
+  height: 200px;
+  border-radius: 8px;
+}
+.imgmid {
+  width: 60vw;
+  margin-left: 10vw;
+}
+figcaption {
+  display: h;
+}
+.imgf {
+  width: 50vw;
+  margin-left: 25vw;
+}
+.div3 figure .video {
+  width: 60vw; /* Keep the video size */
+  height: 40vw;
+  object-fit: fill; /* Ensures the poster image scales to fit the video */
+  margin-left: 10vw;
+}
+
+.div3 figure figcaption,
+figcaption {
+  display: none;
+}
+
+footer img.background2 {
+  width: 100%;
+  height: 150px;
+  object-fit: fill;
+  display: block; /* Ensure no gaps around the image */
+  position: relative;
+  top: 40px;
+  margin-top: -5vh;
+}
+
+footer .social-icons a img {
+  width: 40px; /* Smaller size for phones */
+  height: 30px;
+  border-radius: 10%;
+  transition: 0.3s ease;
+  /* position: relative;
+    bottom: 10vh; */
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  position: relative;
+  bottom: 40px;
+}
+footer .social-icons img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px #007bff;
+}
+
+/* Media Query for Desktop View */
+@media (min-width: 1025px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    overflow-y: hidden;
+  }
+
+  .article1 {
+    display: flex;
+    position: relative;
+    right: 20vw;
+    gap: 0%;
+  }
+  h2 {
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+
+  .div8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create a 1x2 grid */
+    grid-auto-flow: dense; /* Allows manual control of order */
+    gap: 20px; /* Adds space between items */
+    position: relative;
+    right: 70px;
+  }
+
+  section {
+    grid-column: 1; /* Force the section to appear in the second column */
+  }
+
+  .div2 {
+    grid-column: 2; /* Force the image div to appear in the first column */
+  }
+
+  .imgmid {
+    max-width: 500%;
+    height: auto; /* Keep image responsive */
+  }
+
+  .div3 {
+    display: flex;
+    position: relative;
+    right: 8vw;
+    gap: 1vw;
+    width: 1000px;
+  }
+
+  .imgmid {
+    width: 20vw;
+    margin-left: 3vw;
+    margin-top: 4vw;
+  }
+  p {
+    width: 60vw;
+  }
+  .p1 {
+    position: relative;
+
+    right: 60%;
+    width: 260%;
+    padding-right: 2vw;
+    padding-left: 10vw;
+    margin-right: 2%;
+  }
+  .p2 {
+    width: 720px;
+    position: relative;
+    left: 5%;
+    height: auto;
+  }
+  .p3 {
+    position: relative;
+    right: 10vw;
+    /* width: 630px */
+  }
+  .sec1 {
+    width: 500px;
+  }
+
+  .imgf {
+    width: 190px;
+    height: 230px;
+    margin-left: 25vw;
+    position: relative;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    top: 0vh;
+  }
+
+  .div3 figure .video {
+    width: 250px; /* Keep the video size */
+    height: 200px;
+    object-fit: fill; /* Ensures the poster image scales to fit the video */
+    position: relative;
+    left: 5px;
+    top: 25px;
+  }
+  .h22 {
+    position: relative;
+    right: 10vw;
+  }
+  .h21 {
+    position: relative;
+    left: 40px;
+  }
+  .toph2 {
+    display: flex;
+    position: static;
+    right: 0vw;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  p {
+    width: 80vw;
+    text-align: justify;
+    margin-left: 8vw;
+  }
+  h2 {
+    margin-left: 35vw;
+  }
+
+  header img.background {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block; /* Ensure no gaps around the image */
+  }
+  video {
+    display: block;
+    width: 100%; /* Fit video to phone width */
+    height: 200px;
+    border-radius: 8px;
+  }
+  .imgmid {
+    width: 60vw;
+    margin-left: 10vw;
+  }
+  figcaption {
+    display: h;
+  }
+  .imgf {
+    width: 50vw;
+    margin-left: 25vw;
+  }
+  .div3 figure .video {
+    width: 60vw; /* Keep the video size */
+    height: 40vw;
+    object-fit: fill; /* Ensures the poster image scales to fit the video */
+    margin-left: 10vw;
+  }
+
+  .div3 figure figcaption,
+  figcaption {
+    display: none;
+  }
+
+  .tab1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 1x3 grid */
+    gap: 2vw; /* Adds space between the columns */
+    margin-left: 1vw;
+  }
+
+  .tab1 > h2 {
+    grid-column: span 3; /* Make the heading span across all 3 columns */
+  }
+
+  .p1 {
+    grid-column: span 1; /* Each paragraph will take one column */
+  }
+
+  /* .tab1{
+        display: flex;
+        width:50% ; */
+  .tab2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Create a 1x3 grid */
+    gap: 3vw; /* Adds space between the columns */
+    margin-left: 15px;
+  }
+
+  .tab2 > h2 {
+    grid-column: span 3; /* Make the heading span across all 3 columns */
+  }
+
+  .tab2 .p2 {
+    grid-column: span 1; /* Each paragraph takes one column */
+  }
+
+  .sec1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Create a 1x3 grid */
+    gap: 1vw; /* Adds space between the columns */
+    margin-right: 5px;
+    margin-left: 0vw;
+    padding-bottom: 20px;
+  }
+
+  .sec1 > h2 {
+    grid-column: span 3; /* Make the heading span across all 3 columns */
+  }
+
+  .sec1 .p3 {
+    grid-column: span 1; /* Each paragraph takes one column */
+  }
+
+  .p1 {
+    /* position: relative; */
+
+    /* right: 60%; */
+    width: 29vw;
+    margin-left: 1vw;
+    word-wrap: break-word;
+    margin-top: -30px;
+    /* padding-right: 2vw;
+        padding-left: 10vw;
+        margin-right: 2%; */
+  }
+  .p2 {
+    width: 29vw;
+    position: relative;
+    /* left: 5%; */
+    margin-top: -30px;
+    height: auto;
+    margin-left: 0px;
+    margin-left: 0px;
+  }
+  .p3 {
+    width: 29vw;
+    margin-left: 15px;
+    margin-top: -30px;
+    /* position: relative;
+        right: 10vw; */
+    /* width: 630px */
+  }
+}
+@media (width: 1024px) {
+  p {
+    width: 80vw;
+    text-align: justify;
+    margin-left: 8vw;
+  }
+  h2 {
+    margin-left: 35vw;
+  }
+
+  header img.background {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block; /* Ensure no gaps around the image */
+  }
+  video {
+    display: block;
+    width: 100%; /* Fit video to phone width */
+    height: 200px;
+    border-radius: 8px;
+  }
+  .imgmid {
+    width: 60vw;
+    margin-left: 10vw;
+  }
+  figcaption {
+    display: h;
+  }
+  .imgf {
+    width: 50vw;
+    margin-left: 25vw;
+  }
+  .div3 figure .video {
+    width: 60vw; /* Keep the video size */
+    height: 40vw;
+    object-fit: fill; /* Ensures the poster image scales to fit the video */
+    margin-left: 10vw;
+  }
+
+  .div3 figure figcaption,
+  figcaption {
+    display: none;
+  }
+
+  .tab1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 1x3 grid */
+    gap: 2vw; /* Adds space between the columns */
+    margin-left: 1vw;
+  }
+
+  .tab1 > h2 {
+    grid-column: span 3; /* Make the heading span across all 3 columns */
+  }
+
+  .p1 {
+    grid-column: span 1; /* Each paragraph will take one column */
+  }
+
+  /* .tab1{
+    display: flex;
+    width:50% ; */
+  .tab2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Create a 1x3 grid */
+    gap: 3vw; /* Adds space between the columns */
+    margin-left: 15px;
+  }
+
+  .tab2 > h2 {
+    grid-column: span 3; /* Make the heading span across all 3 columns */
+  }
+
+  .tab2 .p2 {
+    grid-column: span 1; /* Each paragraph takes one column */
+  }
+
+  .sec1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Create a 1x3 grid */
+    gap: 1vw; /* Adds space between the columns */
+    margin-right: 5px;
+    margin-left: 0vw;
+    padding-bottom: 20px;
+  }
+
+  .sec1 > h2 {
+    grid-column: span 3; /* Make the heading span across all 3 columns */
+  }
+
+  .sec1 .p3 {
+    grid-column: span 1; /* Each paragraph takes one column */
+  }
+
+  .p1 {
+    /* position: relative; */
+
+    /* right: 60%; */
+    width: 29vw;
+    margin-left: 1vw;
+    word-wrap: break-word;
+    margin-top: -30px;
+    /* padding-right: 2vw;
+    padding-left: 10vw;
+    margin-right: 2%; */
+  }
+  .p2 {
+    width: 29vw;
+    position: relative;
+    /* left: 5%; */
+    margin-top: -30px;
+    height: auto;
+    margin-left: 0px;
+    margin-left: 0px;
+  }
+  .p3 {
+    width: 29vw;
+    margin-left: 15px;
+    margin-top: -30px;
+    /* position: relative;
+    right: 10vw; */
+    /* width: 630px */
+  }
+}
+
+@media (max-width: 932px) and (orientation: landscape) {
+  /* Styles for phones in landscape mode */
+
+  .p1,
+  .p2 {
+    width: 67vw;
+  }
+  .div3 {
+    width: 20vw;
+  }
+  .div4 figure {
+    width: 1vw;
+    position: relative;
+    right: 10vw;
+  }
+  video {
+    width: 10vw;
+  }
+  .video {
+    width: 30vw; /* Explicitly set the width */
+    height: 50vh; /* Maintain aspect ratio */
+    max-width: 30vw; /* Optional: Make it responsive */
+    max-height: 50vh;
+    position: relative;
+    top: 10vw;
+    right: 4vw;
+  }
+
+  div12 {
+    width: 20vw;
+  }
+
+  .div3 {
+    width: 20vw;
+    position: relative;
+    left: 47vw;
+    bottom: 10vh;
+  }
+
+  p2 {
+    position: relative;
+    right: 20vw;
+    width: 58vw;
+  }
+  .p3 {
+    width: 53vw;
+    position: relative;
+    right: 6.75vw;
+  }
+
+  .div1 {
+    width: 10w;
+  }
+  .imgf {
+    width: 20vw;
+    margin-left: 50px;
+    position: relative;
+    left: 1vw;
+    top: 18vh;
+  }
+
+  .imgmid {
+    width: 150px;
+    margin-left: 50px;
+    position: relative;
+    left: 13vw;
+    top: 10vh;
+  }
+  .article1 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0px;
+    position: relative;
+    left: 27vw;
+    bottom: 5vw;
+  }
+  .div8 {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    position: relative;
+    right: 20vw;
+    bottom: 5vw;
+  }
+  figcaption {
+    display: none;
+  }
+  .div3 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4vw;
+    position: relative;
+    left: 58.5vw;
+  }
+}
